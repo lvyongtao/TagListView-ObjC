@@ -113,8 +113,8 @@
 - (void)layoutSubviews {
     [super layoutSubviews];
     [self rearrangeViews];
-    if ([_delegate respondsToSelector:@selector(tagListViewReloadHeight:)]) {
-        [_delegate tagListViewReloadHeight:self.bounds.size.height];
+    if ([_delegate respondsToSelector:@selector(tagListView:ReloadHeight:)]) {
+        [_delegate tagListView:self ReloadHeight:self.bounds.size.height];
     }
 }
 

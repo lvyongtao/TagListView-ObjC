@@ -14,7 +14,7 @@ IB_DESIGNABLE
 
 @protocol TagListViewDelegate <NSObject>
 
-- (void)tagListViewReloadHeight:(CGFloat )height;
+- (void)tagListView:(TagListView *)listView ReloadHeight:(CGFloat )height;
 
 @end
 
