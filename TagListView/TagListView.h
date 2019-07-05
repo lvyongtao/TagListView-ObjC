@@ -9,7 +9,7 @@
 #import <UIKit/UIKit.h>
 
 @class TagView;
-
+@class TagListView;
 IB_DESIGNABLE
 
 @protocol TagListViewDelegate <NSObject>
