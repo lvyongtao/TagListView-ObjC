@@ -12,6 +12,12 @@
 
 IB_DESIGNABLE
 
+@protocol TagListViewDelegate <NSObject>
+
+- (void)tagListViewReloadHeight:(CGFloat )height;
+
+@end
+
 @interface TagListView : UIView
 
 typedef NS_ENUM(NSUInteger, TagListAlignment) {
@@ -19,7 +25,7 @@ typedef NS_ENUM(NSUInteger, TagListAlignment) {
     alignCenter,
     alignRight
 };
-
+@property (weak, nonatomic) id<TagListViewDelegate >delegate;
 @property (nonatomic) IBInspectable UIColor *textColor;
 @property (nonatomic) IBInspectable UIColor *tagBackgroundColor;
 @property (nonatomic) IBInspectable CGFloat cornerRadius;
