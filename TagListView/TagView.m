@@ -124,15 +124,15 @@
     [self reloadStyles];
 }
 
-- (BOOL)isHighlighted {
-    [self reloadStyles];
-    return [super isHighlighted];
-}
-
-- (BOOL)isSelected {
-    [self reloadStyles];
-    return [super isSelected];
-}
+//- (BOOL)isHighlighted {
+//    [self reloadStyles];
+//    return [super isHighlighted];
+//}
+//
+//- (BOOL)isSelected {
+//    [self reloadStyles];
+//    return [super isSelected];
+//}
 
 # pragma mark - Methods
 
