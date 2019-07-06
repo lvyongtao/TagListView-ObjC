@@ -23,6 +23,7 @@
     // Add tags programmatically
     [[self.tagListView addTag:@"Those"] setOnTap:^(TagView *tagView) {
         NSLog(@"on tap tagView:%@", tagView);
+        NSLog(@"aa = %@",tagView.titleLabel.text);
     }];
     [self.tagListView addTag:@"are"];
     [self.tagListView addTag:@"some"];
@@ -30,6 +31,7 @@
     [self.tagListView addTag:@"tags"];
     [self.tagListView addTagsAccordingToDataSourceArray:@[@"from", @"array", @"too"] withOnTapForEach:^(TagView *tagView) {
         tagView.backgroundColor = [UIColor blueColor];
+        NSLog(@"aa = %@",tagView.titleLabel.text);
     }];
     
     UIGestureRecognizer *recognizer = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(listPressed)];    
